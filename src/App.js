@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Home from './Pages/Home';
+import NavScrollExample from './Components/Navbar';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ErrorPage from './Pages/Player'
+import './Css/style.css'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+    <BrowserRouter>
+        
+      <NavScrollExample />
+      
+      <Routes>
+       <Route path="/" element={<Home />} /> 
+       <Route path="*" element={<ErrorPage/>}/>
+    
+      </Routes>
+    
+    </BrowserRouter>
+   
   );
 }
 
