@@ -9,7 +9,8 @@ function NavScrollExample() {
     return (
         <Navbar bg="dark" variant="dark" expand="lg">
             <Container>
-                <Navbar.Brand href="#"><img src="https://imgix.bustle.com/uploads/image/2017/8/29/c8c8077a-10fc-44d5-93f0-da4e592a299e-netflix-logo-print_pms.jpg?w=800&fit=crop&crop=faces&auto=format%2Ccompress" height="50px" /></Navbar.Brand>
+                <Navbar.Brand href="#"><img src="https://logowik.com/content/uploads/images/750_netflix.jpg" height="40px" width="80px" /></Navbar.Brand> 
+           
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
                     <Nav
@@ -24,22 +25,23 @@ function NavScrollExample() {
                         </Nav.Link>
                     </Nav>
 
-                    <button className='btn btn-warning ml-3 mx-3'>wallet</button>
-                    <button className='btn btn-info mx-3'>Login</button>
+                   
 
-                    <Form className="d-flex">
+                    <Form className="d-flex" >
                         <Form.Control
-                            type="search"
-                            placeholder="Search"
+                            type="search" 
+                            placeholder="Search" 
                             className="me-2"
                             aria-label="Search"
                         />
-                        <Button variant="outline-warning">Search</Button>
+                        <Button variant="outline-warning" >Search</Button>
                     </Form>
                 </Navbar.Collapse>
             </Container>
-        </Navbar>
-    );
+         </Navbar>
+  
+      
+        );
 }
 
 export default NavScrollExample;
